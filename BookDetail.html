@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"
+        integrity="sha512-b6lGn9+1aD2DgwZXuSY4BhhdrDURVzu7f/PASu4H1i5+CRpEalOOz/HNhgmxZTK9lObM1Q7ZG9jONPYz8klIMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+    <title>INTELXL - BookDetail</title>
+    <link rel="icon" type="image/x-icon" href="img/fav-icon.png" />
+</head>
+
+<body>
+    <header class="mainheader book-hdr">
+        <!-- =================---Desktop----====================== -->
+        <nav class="ix-nav ix-moved navbar navbar-expand-lg">
+            <div class="container-fluid mx-4 px-5">
+             <div class="logo mx-2">
+                 <a class="navbar-brand" href="index.html">
+                     <img class="desktopViewimg" loading="lazy" src="img/intelxl-high-resolution-logo.png" alt="Intelxl" />
+                 </a>
+             </div>
+             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+             <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav ms-auto">
+                     <!-- <li class="nav-item active">
+                         <a class="nav-link" href="index.html">Home</a>
+                     </li> -->
+                     <li class="nav-item">
+                         <a class="nav-link" href="MedicalCoding.html">Medical Coding</a>
+                     </li>
+                     <li class="nav-item ">
+                        <a class="nav-link" href="RealEstate.html">Real Estate</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="BookPublish.html">Publish Book</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="UnderConstruction.html">IntelXL Learning</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a id="navServices" class="nav-link dropdown-toggle px-4 py-1 mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Insurance
+                        </a>
+                        <ul class="Servicesdropdown dropdown-menu">
+                            <li><a class="dropdown-item" href="IntelxlInsurance.html">Intelxl Insurance</a></li>
+                            <li><a class="dropdown-item " href="IntelXlMRM.html">IntelXlMRM</a></li>
+                            <li><a class="dropdown-item " target="_blank" href="http://mulesoft.com/lp/whitepaper/soa/legacy-system-modernization?d=7013y0000020GwjAAE&nc=7013y0000020IFcAAM&utm_content=7013y0000020GwjAAE&utm_source=google&utm_medium=paid_search&utm_campaign=21172672756&utm_adgroup=168366819784&utm_term=legacy%20application%20modernization&utm_matchtype=p&gclsrc=aw.ds&gad_source=1&gad_campaignid=21172672756&gbraid=0AAAAAD94njQWFeWaV21Y2t8Hqvl3h0nz1&gclid=Cj0KCQjw2IDFBhDCARIsABDKOJ4xI1rb3YGDV5kTSG_VsNKEyJGBbM8m--UgBHV8_cGyae_ebbKfG8AaAif4EALw_wcB">MuleSoft</a></li>
+                            <li><a class="dropdown-item " target="_blank" href="https://teams.live.com/l/message/19:437c323706912717f7c3c4f3beb08113c3028cc4cf91f5064bd6b7eecbd72922@oneToOne.skype/1755356921276?context=%7B%22contextType%22%3A%22chat%22%7D">RFP</a></li>
+                            <li><a class="dropdown-item " target="_blank" href="https://www.decerto.com/post/integrating-insurance-software-with-legacy-systems-challenges-and-solutions">Decerto</a></li>
+                            <li><a class="dropdown-item " target="_blank" href="https://oneshield.com/knowledge_hub/oneshield-announces-integration-with-verisks-iso-electronic-rating-content/#:~:text=OneShield%E2%80%99s%20suite%20of%20insurance%20software,and%20accelerating%20speed%20to%20market">One Schieled</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navServices" class="nav-link dropdown-toggle px-4 py-1 mx-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="Servicesdropdown dropdown-menu">
+                            <li><a class="dropdown-item" href="Service.html">Services</a></li>
+                            <li><a class="dropdown-item " href="About.html">About Us</a></li>
+                            <li><a class="dropdown-item " href="Careers.html">Careers</a></li>
+                        </ul>
+                    </li>
+                     <!-- <li class="nav-item">
+                        <a class="nav-link" href="Service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item ">
+                     <a class="nav-link" href="Careers.html">Careers</a>
+                    </li> -->
+                     <li class="nav-item ">
+                         <a class="nav-link" href="Contactus.html">Contact Us</a>
+                     </li>
+                 </ul>
+             </div>
+            </div>
+         </nav>
+        
+    
+        <!--offcanvas for mobile responsive-->
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel" data-bs-backdrop="true">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="MedicalCoding.html">Medical Coding</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="RealEstate.html">Real Estate</a>
+                    </li>
+                    <li class="nav-item active p-2 ps-5">
+                        <a class="nav-link" href="BookPublish.html">Publish Book</a>
+                    </li>
+                    <li class="nav-item  p-2 ps-5">
+                        <a class="nav-link" href="Service.html">Services</a>
+                    </li>
+                    <li class="nav-item  p-2 ps-5">
+                        <a class="nav-link" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                     <a class="nav-link" href="Careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item p-2 ps-5">
+                        <a class="nav-link" href="Contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    
+       
+    </header>
+    <!-- ============---Header end----=================== -->
+    <div class="container-fluid main-content p-0" id="RealEstate-detail">
+        <section class="banner-cection">
+            <div class="container-fluid bookinfo-banner d-flex justify-content-center align-items-center p-0 ">
+                <div style="z-index:1;">
+                    <h2 class="text-center text-white font-monospace">Start your publishing journey here.</h2>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="p-5">
+                <form>
+                    <h2 class="text-center">Book information</h2>
+                    <p class="text-center">Enter all the information about your book - It's language, title and
+                        author(s)</p>
+                    <div>
+                        <h5 class="our-service-text">Book Language<span class="text-danger">*</span></h5>
+                        <p>Primary language in which your book has been written. Incase of bi-lingual or multi-lingual,
+                            choose the language that is used the most.</p>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
+                            style="display:flex;flex-wrap:wrap;">
+
+
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="1"
+                                    id="english">
+                                <label class="btn profilelabel" for="english">English</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="2"
+                                    id="Tamil">
+                                <label class="btn profilelabel" for="Tamil">Tamil</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="3"
+                                    id="malayalam">
+                                <label class="btn profilelabel" for="malayalam">Malayalam</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="4"
+                                    id="hindi" name="ProfileFor">
+                                <label class="btn profilelabel" for="hindi">Hindi</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="5"
+                                    id="thelugu">
+                                <label class="btn profilelabel" for="thelugu">Thelugu</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="our-service-text">Book Title <span class="text-danger">*</span></h5>
+                        <p>
+                            Choose a unique title. You can use amazon.com to check if your title has already been taken.
+                        </p>
+                        <input class="form-control" placeholder="Enter your book title">
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="our-service-text">Book Subtitle (optional)</h5>
+                        <p>
+                            Subtitle gives more clarity about your book to readers. Recommended for Non-Fiction books
+                        </p>
+                        <input class="form-control" placeholder="Enter your book Subtitle">
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="our-service-text">Author Name <span class="text-danger">*</span></h5>
+                        <p>
+                            Author name that would go on the book cover. If you write under Pseudonym, mention that as the author name here.
+                        </p>
+                        <input class="form-control" placeholder="Enter Full name">
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="our-service-text">Enter Contributors (optional)</h5>
+                        <p>
+                            Add contributors for your work including co-authors, illustrators and editors.
+                        </p>
+                        <div class="radio-list me-2">
+                            <input type="radio" class="form-check-input" id="Co-Author">
+                            <label for="Co-Author" class="form-label">Co-Author</label>
+                        </div>
+                        <div class="radio-list me-2">
+                            <input type="radio" class="form-check-input" id="editor">
+                            <label for="editor" class="form-label">Editor</label>
+                        </div>
+                        <div class="radio-list me-2">
+                            <input type="radio" class="form-check-input" id="Illustrator">
+                            <label for="Illustrator" class="form-label">Illustrator</label>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <h5 class="our-service-text">Book Genre<span class="text-danger">*</span></h5>
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group"
+                            style="display:flex;flex-wrap:wrap;">
+
+
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="1"
+                                    id="Fiction">
+                                <label class="btn profilelabel" for="Fiction">Fiction</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="2"
+                                    id="Non-Fiction">
+                                <label class="btn profilelabel" for="Non-Fiction">Non-Fiction</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="3"
+                                    id="Academic">
+                                <label class="btn profilelabel" for="Academic">Academic</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="4"
+                                    id="Cookbook" name="ProfileFor">
+                                <label class="btn profilelabel" for="Cookbook">Cookbook</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="4"
+                                    id="Children Book" name="ProfileFor">
+                                <label class="btn profilelabel" for="Children Book">Children Book</label>
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" class="btn-check profile-for-radio" autocomplete="off" value="5"
+                                    id="Others">
+                                <label class="btn profilelabel" for="Others">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-3 d-flex">
+                    <div>
+                        <button class="btn btn-secondary px-3">Save as Drafts</button>
+                    </div>
+                    <div class="ps-3">
+                        <div class="btn px-3 btn-success"><a class="text-white" href="BookDesign.html">Save and continue</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======footer===== -->
+    <footer>
+        <div class="container">
+            <div class="footerContent py-4 text-center">
+                © Copyright <span id="currentYear"></span> IntelXL. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
