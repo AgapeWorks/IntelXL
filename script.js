@@ -132,6 +132,25 @@ $(document).ready(function () {
             $(".ix-nav").removeClass("ix-fixed");
         }
     });
+    const tabs = document.querySelectorAll(".tab");
+const contents = document.querySelectorAll(".tab-content");
+
+tabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    tabs.forEach(t => t.classList.remove("active"));
+    tab.classList.add("active");
+
+    const target = tab.getAttribute("data-tab");
+
+    contents.forEach(content => {
+      content.classList.remove("active");
+      if (content.id === target) {
+        content.classList.add("active");
+      }
+    });
+  });
+});
+
 });
 
 
